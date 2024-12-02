@@ -1,0 +1,16 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_TMDB_API_KEY": "@tmdb_api_key",
+    "VITE_TMDB_ACCESS_TOKEN": "@tmdb_access_token",
+    "VITE_BRANDFETCH_API_KEY": "@brandfetch_api_key"
+  }
+}
